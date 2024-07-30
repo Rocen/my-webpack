@@ -1,7 +1,7 @@
 (function(graph){
             function require(moduleId){ 
               function localRequire(relativePath){
-                return require(graph[moduleId].dependecies[relativePath])
+                return require(graph[moduleId].dependencies[relativePath])
               }
               var exports = {};
               (function(require,exports,code){
